@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Chair Monitoring System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SMART CHAIR</h1>
+        <p class="subtitle">Monitoring System</p>
+
+        <div class="system-status">
+            🟢 SYSTEM ONLINE
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Chair Position</h3>
+                <div class="value">DOCKED</div>
+                <p>Distance: 7.8 cm</p>
+            </div>
+
+            <div class="card">
+                <h3>Occupancy</h3>
+                <div class="value">EMPTY</div>
+                <p>Touch: 1245</p>
+            </div>
+
+            <div class="card">
+                <h3>Buzzer</h3>
+                <div class="value">OFF</div>
+                <p>System Alert</p>
+            </div>
+
+        </div>
+
+        <div class="alert-box">
+            <h3>Alert Status</h3>
+            <p>🟢 No Alert</p>
+        </div>
+
+        <div class="history">
+
+            <h2>Event History</h2>
+
+            <div class="event">
+                <span>17:02:11</span>
+                <span>Chair Docked</span>
+            </div>
+
+            <div class="event">
+                <span>17:05:32</span>
+                <span>Person Detected</span>
+            </div>
+
+            <div class="event">
+                <span>17:15:08</span>
+                <span>Person Left</span>
+            </div>
+
+            <div class="event">
+                <span>17:16:21</span>
+                <span>Chair Moved</span>
+            </div>
+
+        </div>
+
+    </div>
+    <button onclick="testNotification()" class="notify-btn">
+    🔔 Test Notification
+</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
